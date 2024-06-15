@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "EStore.Application/1.0.0": {
+        "dependencies": {
+          "EStore.Domain": "1.0.0"
+        },
+        "runtime": {
+          "EStore.Application.dll": {}
+        }
+      },
+      "EStore.Domain/1.0.0": {
+        "runtime": {
+          "EStore.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EStore.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EStore.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,17 @@
+C:\Users\ASUS\source\repos\EStoreApp\EStore.Infrastructure\bin\Debug\net8.0\EStore.Infrastructure.deps.json
+C:\Users\ASUS\source\repos\EStoreApp\EStore.Infrastructure\bin\Debug\net8.0\EStore.Infrastructure.dll
+C:\Users\ASUS\source\repos\EStoreApp\EStore.Infrastructure\bin\Debug\net8.0\EStore.Infrastructure.pdb
+C:\Users\ASUS\source\repos\EStoreApp\EStore.Infrastructure\bin\Debug\net8.0\EStore.Application.dll
+C:\Users\ASUS\source\repos\EStoreApp\EStore.Infrastructure\bin\Debug\net8.0\EStore.Domain.dll
+C:\Users\ASUS\source\repos\EStoreApp\EStore.Infrastructure\bin\Debug\net8.0\EStore.Application.pdb
+C:\Users\ASUS\source\repos\EStoreApp\EStore.Infrastructure\bin\Debug\net8.0\EStore.Domain.pdb
+C:\Users\ASUS\source\repos\EStoreApp\EStore.Infrastructure\obj\Debug\net8.0\EStore.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\ASUS\source\repos\EStoreApp\EStore.Infrastructure\obj\Debug\net8.0\EStore.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\source\repos\EStoreApp\EStore.Infrastructure\obj\Debug\net8.0\EStore.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\ASUS\source\repos\EStoreApp\EStore.Infrastructure\obj\Debug\net8.0\EStore.Infrastructure.AssemblyInfo.cs
+C:\Users\ASUS\source\repos\EStoreApp\EStore.Infrastructure\obj\Debug\net8.0\EStore.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\EStoreApp\EStore.Infrastructure\obj\Debug\net8.0\EStore.I.6167846E.Up2Date
+C:\Users\ASUS\source\repos\EStoreApp\EStore.Infrastructure\obj\Debug\net8.0\EStore.Infrastructure.dll
+C:\Users\ASUS\source\repos\EStoreApp\EStore.Infrastructure\obj\Debug\net8.0\refint\EStore.Infrastructure.dll
+C:\Users\ASUS\source\repos\EStoreApp\EStore.Infrastructure\obj\Debug\net8.0\EStore.Infrastructure.pdb
+C:\Users\ASUS\source\repos\EStoreApp\EStore.Infrastructure\obj\Debug\net8.0\ref\EStore.Infrastructure.dll
