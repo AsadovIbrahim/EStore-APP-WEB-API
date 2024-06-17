@@ -15,3 +15,4 @@ C:\Users\ASUS\source\repos\EStoreApp\EStore.Infrastructure\obj\Debug\net8.0\ESto
 C:\Users\ASUS\source\repos\EStoreApp\EStore.Infrastructure\obj\Debug\net8.0\refint\EStore.Infrastructure.dll
 C:\Users\ASUS\source\repos\EStoreApp\EStore.Infrastructure\obj\Debug\net8.0\EStore.Infrastructure.pdb
 C:\Users\ASUS\source\repos\EStoreApp\EStore.Infrastructure\obj\Debug\net8.0\ref\EStore.Infrastructure.dll
+C:\Users\ASUS\source\repos\EStoreApp\EStore.Infrastructure\obj\Debug\net8.0\EStore.Infrastructure.sourcelink.json

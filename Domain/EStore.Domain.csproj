@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DTO%27s\" />
-    <Folder Include="Entities\Abstracts\" />
-    <Folder Include="Entities\Concretes\" />
-    <Folder Include="Enums\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
 

@@ -9,3 +9,4 @@ C:\Users\ASUS\source\repos\EStoreApp\Domain\obj\Debug\net8.0\EStore.Domain.dll
 C:\Users\ASUS\source\repos\EStoreApp\Domain\obj\Debug\net8.0\refint\EStore.Domain.dll
 C:\Users\ASUS\source\repos\EStoreApp\Domain\obj\Debug\net8.0\EStore.Domain.pdb
 C:\Users\ASUS\source\repos\EStoreApp\Domain\obj\Debug\net8.0\ref\EStore.Domain.dll
+C:\Users\ASUS\source\repos\EStoreApp\Domain\obj\Debug\net8.0\EStore.Domain.sourcelink.json

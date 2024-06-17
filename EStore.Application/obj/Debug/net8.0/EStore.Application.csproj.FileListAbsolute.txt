@@ -13,3 +13,4 @@ C:\Users\ASUS\source\repos\EStoreApp\EStore.Application\obj\Debug\net8.0\EStore.
 C:\Users\ASUS\source\repos\EStoreApp\EStore.Application\obj\Debug\net8.0\refint\EStore.Application.dll
 C:\Users\ASUS\source\repos\EStoreApp\EStore.Application\obj\Debug\net8.0\EStore.Application.pdb
 C:\Users\ASUS\source\repos\EStoreApp\EStore.Application\obj\Debug\net8.0\ref\EStore.Application.dll
+C:\Users\ASUS\source\repos\EStoreApp\EStore.Application\obj\Debug\net8.0\EStore.Application.sourcelink.json
