@@ -14,7 +14,7 @@ namespace EStore.Domain.Entities.Concretes
         public decimal Price { get; set; }
         public int Stock { get; set; }
         public int CategoryId { get; set; }
-        public Category Category { get; set; }
-        public ICollection<InvoiceItem> InvoiceItems { get; set; } = new List<InvoiceItem>();
+        public virtual Category Category { get; set; }
+        public virtual ICollection<InvoiceItem> InvoiceItems { get; set; } = new List<InvoiceItem>();
     }
 }

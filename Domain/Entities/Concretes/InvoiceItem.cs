@@ -15,7 +15,7 @@ namespace EStore.Domain.Entities.Concretes
         public int InvoiceId { get; set; }
 
 
-        public Product Product { get; set; }
-        public Invoice Invoice { get; set; }
+        public virtual Product Product { get; set; }
+        public virtual Invoice Invoice { get; set; }
     }
 }

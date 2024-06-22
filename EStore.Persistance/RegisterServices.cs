@@ -1,5 +1,6 @@
 ﻿using EStore.Application.Repositories.Concretes;
 using EStore.Application.Services.Abstracts;
+using EStore.Domain.Entities.Concretes;
 using EStore.Persistance.Contexts;
 using EStore.Persistance.Repositories.Concretes;
 using EStore.Persistance.Services.Concretes;
@@ -40,6 +41,37 @@ namespace EStore.Persistance
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<IAuthService, AuthService>();
 
+            //Role Register
+
+            SeedRoles(services.BuildServiceProvider()).Wait();
+
+        }
+
+        private static async Task SeedRoles(IServiceProvider serviceProvider)
+        {
+            using (var scope = serviceProvider.CreateScope())
+            {
+                var roleRepository = scope.ServiceProvider.GetRequiredService<IRoleRepository>();
+                var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+
+                context.Database.EnsureCreated();
+
+                if (!context.Roles.Any())
+                {
+                    var roles = new List<Role>
+                    {
+                        new Role { Name = "User" },
+                        new Role { Name = "Admin" },
+                        new Role { Name = "SuperAdmin" },
+                        new Role { Name = "Cashier" }
+                    };
+
+                    foreach (var role in roles)
+                    {
+                        await roleRepository.AddAsync(role);
+                    }
+                }
+            }
         }
     }
 }

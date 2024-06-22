@@ -12,7 +12,9 @@ namespace EStore.Application.Services.Abstracts
         Task<LoginResponseDTO>LoginAsync(LoginDTO loginDTO);
         Task<LoginResponseDTO> RefreshTokenAsync(string token);
         Task RegisterAsync(RegisterRequestDTO registerDTO);
+        Task PasswordForgotAsync(PasswordForgotDTO passwordForgotDTO);
+        Task<bool> ConfirmEmailAsync(EmailConfirmDTO emailConfirmDTO);
 
-        
+
     }
 }

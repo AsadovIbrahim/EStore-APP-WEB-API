@@ -17,6 +17,8 @@ namespace EStore.Presentation
             builder.Services.AddInfrastructureServices();
             builder.Services.AddControllers();
             builder.Services.AddEndpointsApiExplorer();
+            builder.Services.AddApiServices(builder.Configuration);
+
             builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
@@ -30,6 +32,7 @@ namespace EStore.Presentation
 
             app.UseHttpsRedirection();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
 

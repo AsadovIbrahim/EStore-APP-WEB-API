@@ -12,7 +12,7 @@ namespace EStore.Domain.Entities.Concretes
         public string Name { get; set; }
 
         // Navigation Properties
-        public ICollection<User> Users { get; set; } = new List<User>();
+        public virtual ICollection<User> Users { get; set; } = new List<User>();
 
         public override string ToString()
         {

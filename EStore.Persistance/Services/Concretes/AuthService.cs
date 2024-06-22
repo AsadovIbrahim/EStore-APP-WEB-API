@@ -8,6 +8,7 @@ using Microsoft.IdentityModel.Tokens;
 using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Net;
+using System.Net.Mail;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
@@ -143,6 +144,8 @@ namespace EStore.Persistance.Services.Concretes
 
         public async Task RegisterAsync(RegisterRequestDTO registerDTO)
         {
+            if (registerDTO == null) throw new ArgumentNullException(nameof(registerDTO));
+
             if (await _userRepository.UserExistsAsync(registerDTO.Email))
                 throw new Exception("User already exists.");
 
@@ -150,6 +153,9 @@ namespace EStore.Persistance.Services.Concretes
                 throw new Exception("Passwords do not match.");
 
             CreatePasswordHash(registerDTO.Password, out byte[] passwordHash, out byte[] passwordSalt);
+
+            var role = await _roleRepository.GetRoleByNameAsync("User");
+            if (role == null) throw new Exception("User role not found.");
 
             var user = new User
             {
@@ -159,7 +165,7 @@ namespace EStore.Persistance.Services.Concretes
                 Email = registerDTO.Email,
                 PasswordHash = passwordHash,
                 PasswordSalt = passwordSalt,
-                RoleId = (await _roleRepository.GetRoleByNameAsync("User")).Id
+                RoleId = role.Id
             };
 
             await _userRepository.AddAsync(user);
@@ -172,5 +178,112 @@ namespace EStore.Persistance.Services.Concretes
                 passwordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(password));
             }
         }
+
+        public async Task PasswordForgotAsync(PasswordForgotDTO passwordForgotDTO)
+        {
+            var user = await _userRepository.GetUserByEmailAsync(passwordForgotDTO.Email);
+            if(user == null)
+            {
+                throw new Exception("User not found!");
+            }
+            var resetToken = GeneratePasswordResetToken();
+           
+
+            var resetLink = $"{_configuration["AppSettings:ClientUrl"]}/reset-password?token={resetToken}";
+
+            var mailMessage = new MailMessage
+            {
+                From = new MailAddress(_configuration["MailSettings:Mail"], _configuration["MailSettings:DisplayName"]),
+                Subject = "Password Reset",
+                Body = $"Please reset your password by clicking on the following link: {resetLink}",
+                IsBodyHtml = true,
+            };
+            mailMessage.To.Add(user.Email);
+
+            using (var smtpClient = new SmtpClient("smtp.example.com"))
+            {
+                smtpClient.Port = 587;
+                smtpClient.Credentials = new NetworkCredential("your-email@example.com", "your-email-password");
+                smtpClient.EnableSsl = true;
+                await smtpClient.SendMailAsync(mailMessage);
+            }
+
+        }
+
+        public async Task<bool> ConfirmEmailAsync(EmailConfirmDTO emailConfirmDTO)
+        {
+            var user = await _userRepository.GetUserByEmailAsync(emailConfirmDTO.Email);
+            if (user == null || user.Email != emailConfirmDTO.Token)
+            {
+                return false;
+            }
+
+            user.EmailConfirmed = true;
+            await _userRepository.Update(user);
+            return true;
+        }
+        private async Task SendConfirmationEmailAsync(User user)
+        {
+            var token = GenerateEmailConfirmationToken(user);
+            var confirmationLink = $"{_configuration["AppSettings:ClientUrl"]}/confirm-email?token={token}";
+
+            var mailMessage = new MailMessage
+            {
+                From = new MailAddress(_configuration["SmtpSettings:FromEmail"]),
+                Subject = "Confirm your email address",
+                Body = $"Please confirm your email address by clicking <a href=\"{confirmationLink}\">here</a>.",
+                IsBodyHtml = true
+            };
+
+            mailMessage.To.Add(user.Email);
+
+            using (var smtpClient = new SmtpClient(_configuration["SmtpSettings:Host"], int.Parse(_configuration["SmtpSettings:Port"])))
+            {
+                smtpClient.UseDefaultCredentials = false;
+                smtpClient.Credentials = new NetworkCredential(_configuration["SmtpSettings:Username"], _configuration["SmtpSettings:Password"]);
+                smtpClient.EnableSsl = true;
+
+                try
+                {
+                    await smtpClient.SendMailAsync(mailMessage);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error sending email: {ex.Message}");
+                    throw;
+                }
+            }
+        }
+
+        private string GenerateEmailConfirmationToken(User user)
+        {
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(_configuration["JWT:Key"]);
+
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new Claim[]
+                {
+                    new Claim(ClaimTypes.Name, user.UserName),
+                    new Claim(ClaimTypes.Email, user.Email),
+                }),
+                Expires = DateTime.UtcNow.AddDays(1),
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+            };
+
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            return tokenHandler.WriteToken(token);
+        }
+        private string GeneratePasswordResetToken()
+        {
+            using (var rng = new RNGCryptoServiceProvider())
+            {
+                var byteArray = new byte[32];
+                rng.GetBytes(byteArray);
+                return Convert.ToBase64String(byteArray);
+            }
+        }
+
+
     }
 }
