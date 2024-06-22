@@ -16,8 +16,9 @@ namespace EStore.Domain.Entities.Concretes
         public byte[] PasswordHash { get; set; }
         public byte[] PasswordSalt { get; set; }
 
-
-        public ICollection<Role> Roles { get; set; }
+        public bool EmailConfirmed { get; set; } = false;
+        public int RoleId { get; set; } 
+        public Role Role { get; set; }
         public ICollection<UserToken> UserTokens { get; set; }
     }
 }

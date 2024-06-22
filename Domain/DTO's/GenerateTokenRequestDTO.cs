@@ -12,6 +12,6 @@ namespace EStore.Domain.DTO_s
         public int Id { get; set; }
         public string? Email { get; set; }
         public string? UserName { get; set; }
-        public IList<Claim> Claims { get; set; }
+        public IList<Claim> Claims { get; set; } = new List<Claim>();
     }
 }

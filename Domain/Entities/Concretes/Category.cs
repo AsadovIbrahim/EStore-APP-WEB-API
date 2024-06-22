@@ -11,6 +11,6 @@ namespace EStore.Domain.Entities.Concretes
     {
         public string Name { get; set; }
 
-        public ICollection<Product>Products { get; set; }
+        public ICollection<Product> Products { get; set; } = new List<Product>();
     }
 }

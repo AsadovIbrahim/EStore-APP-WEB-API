@@ -10,11 +10,8 @@ namespace EStore.Application.Repositories.Concretes
 {
     public interface IUserRepository:IGenericRepository<User>
     {
-        Task RegisterAsync(User user);
-        Task<User?> GetByEmailAsync(string? email);
-        Task<User?> GetByEmailWithRolesAsync(string? email);
-        Task<User?> GetByUsernameAsync(string? username);
-        Task<User?> GetByUsernameWithRolesAsync(string? username);
-        Task<User?> GetUserByIdAsync(int id);
+        Task<User> GetUserByEmailAsync(string email);
+        Task<bool> UserExistsAsync(string email);
+
     }
 }

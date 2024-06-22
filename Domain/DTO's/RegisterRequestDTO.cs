@@ -14,6 +14,5 @@ namespace EStore.Domain.DTO_s
         public string Surname { get; set; }
         public string Password { get; set; }
         public string ComfirmPassword { get; set; }
-        public string Role { get; set; }
     }
 }

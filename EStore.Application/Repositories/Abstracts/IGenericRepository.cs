@@ -10,11 +10,13 @@ namespace EStore.Application.Repositories.Abstracts
 {
     public interface IGenericRepository<T>where T : Entity,new()
     {
+        Task AddAsync(T entity);
         Task<IEnumerable<T>> GetAllAsync();
         Task<IEnumerable<T>> GetByExpressionAsync(Expression<Func<T, bool>> expression);
         Task<T?> GetByIdAsync(int id, bool isDeleted);
-        void Update(T entity);
-        void Delete(T entity);
+        Task<T?> GetByIdAsync(int id);
+        Task Update(T entity);
+        Task Delete(T entity);
         Task SaveChangesAsync();
     }
 }

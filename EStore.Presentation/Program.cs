@@ -1,4 +1,7 @@
 
+using EStore.Application.Services.Abstracts;
+using EStore.Infrastructure;
+using EStore.Infrastructure.Services;
 using EStore.Persistance;
 
 namespace EStore.Presentation
@@ -11,8 +14,8 @@ namespace EStore.Presentation
 
             // Add services to the container.
             builder.Services.AddPersistanceServices(builder.Configuration);
+            builder.Services.AddInfrastructureServices();
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 

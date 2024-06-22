@@ -11,5 +11,7 @@ namespace EStore.Application.Repositories.Concretes
     public interface ICategoryRepository:IGenericRepository<Category>
     {
         Task<Category>GetCategoryById(int id);
+        Task<List<Category>> GetAllCategoriesAsync(int page, int size);
+
     }
 }

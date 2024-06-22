@@ -20,6 +20,6 @@ namespace EStore.Domain.Entities.Concretes
         public int? SellInvoiceId { get; set; }
 
         // Navigation Properties
-        public ICollection<InvoiceItem> InvoiceItems { get; set; }
+        public ICollection<InvoiceItem> InvoiceItems { get; set; } = new List<InvoiceItem>();
     }
 }
