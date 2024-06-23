@@ -31,7 +31,7 @@ namespace EStore.Presentation.Controllers
         }
 
         [HttpGet]
-        [Authorize(Roles = "SuperAdmin,Admin,Cashier")]
+        [Authorize(Roles = "SuperAdmin,Admin,Cashier,User")]
 
         public async Task<IActionResult> GetAllCategories([FromQuery] GetAllCategoryRequestDTO getAllCategoryRequestDTO)
         {

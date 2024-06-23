@@ -1072,6 +1072,7 @@
       "EStore.Persistance/1.0.0": {
         "dependencies": {
           "EStore.Application": "1.0.0",
+          "EStore.Infrastructure": "1.0.0",
           "Microsoft.AspNetCore.Hosting": "2.2.7",
           "Microsoft.EntityFrameworkCore": "8.0.6",
           "Microsoft.EntityFrameworkCore.Proxies": "8.0.6",

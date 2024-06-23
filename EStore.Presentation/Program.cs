@@ -19,7 +19,6 @@ namespace EStore.Presentation
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddApiServices(builder.Configuration);
 
-            builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
 

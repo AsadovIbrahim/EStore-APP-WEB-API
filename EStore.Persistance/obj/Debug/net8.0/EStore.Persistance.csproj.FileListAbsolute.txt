@@ -18,3 +18,5 @@ C:\Users\ASUS\source\repos\EStoreApp\EStore.Persistance\obj\Debug\net8.0\ref\ESt
 C:\Users\ASUS\source\repos\EStoreApp\EStore.Persistance\bin\Debug\net8.0\EStore.Persistance.runtimeconfig.json
 C:\Users\ASUS\source\repos\EStoreApp\EStore.Persistance\obj\Debug\net8.0\EStore.Persistance.genruntimeconfig.cache
 C:\Users\ASUS\source\repos\EStoreApp\EStore.Persistance\obj\Debug\net8.0\EStore.Persistance.sourcelink.json
+C:\Users\ASUS\source\repos\EStoreApp\EStore.Persistance\bin\Debug\net8.0\EStore.Infrastructure.dll
+C:\Users\ASUS\source\repos\EStoreApp\EStore.Persistance\bin\Debug\net8.0\EStore.Infrastructure.pdb

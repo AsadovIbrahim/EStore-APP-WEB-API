@@ -26,6 +26,7 @@ namespace EStore.Presentation.Controllers
             try
             {
                 await _authService.RegisterAsync(registerRequestDTO);
+                
                 return Ok(new { Message = "Registration successful. Please check your email to confirm your account." });
             }
             catch (Exception ex)
@@ -55,7 +56,7 @@ namespace EStore.Presentation.Controllers
 
         [HttpPost("refresh-token")]
         [AllowAnonymous]
-        public async Task<IActionResult> RefreshToken([FromBody] string token)
+        public async Task<IActionResult> RefreshToken([FromForm] string token)
         {
             try
             {

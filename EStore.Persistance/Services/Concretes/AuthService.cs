@@ -2,6 +2,7 @@
 using EStore.Application.Services.Abstracts;
 using EStore.Domain.DTO_s;
 using EStore.Domain.Entities.Concretes;
+using EStore.Infrastructure.Services;
 using EStore.Persistance.Repositories.Concretes;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -35,7 +36,8 @@ namespace EStore.Persistance.Services.Concretes
         {
             var user = await _userRepository.GetUserByEmailAsync(loginDTO.Email);
 
-            if (user == null || !VerifyPasswordHash(loginDTO.Password, user.PasswordHash, user.PasswordSalt))
+            if (user == null ||user.UserName!=loginDTO.UserName ||user.Email!=loginDTO.Email 
+                || !VerifyPasswordHash(loginDTO.Password, user.PasswordHash, user.PasswordSalt))
             {
                 return new LoginResponseDTO
                 {
@@ -154,7 +156,7 @@ namespace EStore.Persistance.Services.Concretes
 
             CreatePasswordHash(registerDTO.Password, out byte[] passwordHash, out byte[] passwordSalt);
 
-            var role = await _roleRepository.GetRoleByNameAsync("User");
+            var role = await _roleRepository.GetRoleByNameAsync("Cashier");
             if (role == null) throw new Exception("User role not found.");
 
             var user = new User
@@ -167,7 +169,8 @@ namespace EStore.Persistance.Services.Concretes
                 PasswordSalt = passwordSalt,
                 RoleId = role.Id
             };
-
+            var emailtoken=GenerateEmailConfirmationToken(user);
+            await SmtpService.SendMail(user.Email, "Confirm Your Email", $"<a href='{emailtoken}'>Confirm Your Email</a>"); 
             await _userRepository.AddAsync(user);
         }
         private static void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)
@@ -213,47 +216,15 @@ namespace EStore.Persistance.Services.Concretes
         public async Task<bool> ConfirmEmailAsync(EmailConfirmDTO emailConfirmDTO)
         {
             var user = await _userRepository.GetUserByEmailAsync(emailConfirmDTO.Email);
-            if (user == null || user.Email != emailConfirmDTO.Token)
+            if (user == null)
             {
                 return false;
             }
-
             user.EmailConfirmed = true;
             await _userRepository.Update(user);
             return true;
         }
-        private async Task SendConfirmationEmailAsync(User user)
-        {
-            var token = GenerateEmailConfirmationToken(user);
-            var confirmationLink = $"{_configuration["AppSettings:ClientUrl"]}/confirm-email?token={token}";
-
-            var mailMessage = new MailMessage
-            {
-                From = new MailAddress(_configuration["SmtpSettings:FromEmail"]),
-                Subject = "Confirm your email address",
-                Body = $"Please confirm your email address by clicking <a href=\"{confirmationLink}\">here</a>.",
-                IsBodyHtml = true
-            };
-
-            mailMessage.To.Add(user.Email);
-
-            using (var smtpClient = new SmtpClient(_configuration["SmtpSettings:Host"], int.Parse(_configuration["SmtpSettings:Port"])))
-            {
-                smtpClient.UseDefaultCredentials = false;
-                smtpClient.Credentials = new NetworkCredential(_configuration["SmtpSettings:Username"], _configuration["SmtpSettings:Password"]);
-                smtpClient.EnableSsl = true;
-
-                try
-                {
-                    await smtpClient.SendMailAsync(mailMessage);
-                }
-                catch (Exception ex)
-                {
-                    Console.WriteLine($"Error sending email: {ex.Message}");
-                    throw;
-                }
-            }
-        }
+        
 
         private string GenerateEmailConfirmationToken(User user)
         {

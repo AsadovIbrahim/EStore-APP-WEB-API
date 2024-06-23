@@ -21,6 +21,7 @@ namespace EStore.Infrastructure.Services
         }
         public string GenerateAccessToken(GenerateTokenRequestDTO generateTokenRequestDTO)
         {
+
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JWT:Key"]!));
             var tokenCredential = new SigningCredentials(key, SecurityAlgorithms.HmacSha256Signature);
 

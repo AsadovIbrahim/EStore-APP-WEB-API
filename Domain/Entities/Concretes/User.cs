@@ -18,7 +18,7 @@ namespace EStore.Domain.Entities.Concretes
 
         public bool EmailConfirmed { get; set; } = false;
         public int RoleId { get; set; } 
-        public virtual Role Role { get; set; }
+        public virtual ICollection<Role> Roles { get; set; }
         public virtual ICollection<UserToken> UserTokens { get; set; }
     }
 }
