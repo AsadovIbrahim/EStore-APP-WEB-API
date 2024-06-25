@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\Domain\\EStore.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\Domain\\EStore.Domain.csproj",
       "projectName": "EStore.Domain",
-      "projectPath": "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\Domain\\EStore.Domain.csproj",
+      "projectPath": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\Domain\\EStore.Domain.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\Domain\\obj\\",
+      "outputPath": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",

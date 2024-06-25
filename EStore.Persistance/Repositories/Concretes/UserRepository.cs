@@ -17,14 +17,24 @@ namespace EStore.Persistance.Repositories.Concretes
         {
         }
 
-        public async Task<User> GetUserByEmailAsync(string email)
+        public async Task<User?> GetByEmailAsync(string? email)
         {
-            return await _context.Users.FirstOrDefaultAsync(user => user.Email == email);
+            return await _context.Set<User>().FirstOrDefaultAsync(p => p.Email == email);
         }
 
-        public async Task<bool> UserExistsAsync(string email)
+        public async Task<User?> GetByEmailWithRolesAsync(string? email)
         {
-            return await _context.Users.AnyAsync(user => user.Email == email);
+            throw new NotImplementedException();
+        }
+
+        public async Task<User?> GetByTokenAsync(string? token)
+        {
+            return await _context.Set<User>().SingleOrDefaultAsync(p => p.UserTokens.SingleOrDefault(u => u.Token == token).Token == token);
+        }
+
+        public async Task<User?> GetByUsernameAsync(string? username)
+        {
+            return await _context.Set<User>().FirstOrDefaultAsync(p => p.UserName == username);
         }
     }
 }

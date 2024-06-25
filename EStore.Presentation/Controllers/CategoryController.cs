@@ -1,5 +1,8 @@
-﻿using EStore.Application.Services.Abstracts;
+﻿using Azure;
+using EStore.Application.Repositories.Concretes;
+using EStore.Application.Services.Abstracts;
 using EStore.Domain.DTO_s;
+using EStore.Domain.ViewModels.Category;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -12,35 +15,33 @@ namespace EStore.Presentation.Controllers
     public class CategoryController : ControllerBase
     {
         private readonly ICategoryService _categoryService;
-
-        public CategoryController(ICategoryService categoryService)
+        private readonly ICategoryRepository _categoryRepository;
+        public CategoryController(ICategoryService categoryService, ICategoryRepository categoryRepository)
         {
             _categoryService = categoryService;
+            _categoryRepository = categoryRepository;
         }
 
-        [HttpPost]
-        [Authorize(Roles = "SuperAdmin,Admin,Cashier")]
-        public async Task<IActionResult> AddCategory([FromBody] AddCategoryRequestDTO addCategoryRequestDTO)
+        [HttpPost("[action]")]
+        [Authorize(Roles = "SuperAdmin,Admin")]
+        public async Task<IActionResult> AddCategory([FromBody] AddCategoryVM categoryVM)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
-            var response = await _categoryService.AddCategoryAsync(addCategoryRequestDTO);
-            return Ok(response);
+            await _categoryService.AddCategoryAsync(categoryVM);
+            return Ok();
         }
 
-        [HttpGet]
-        [Authorize(Roles = "SuperAdmin,Admin,Cashier,User")]
-
-        public async Task<IActionResult> GetAllCategories([FromQuery] GetAllCategoryRequestDTO getAllCategoryRequestDTO)
+        [HttpGet("[action]")]
+        public async Task<IActionResult> GetAllCategories(int page,int size)
         {
-            var categories = await _categoryService.GetAllCategoriesAsync(getAllCategoryRequestDTO);
+            var categories = await _categoryService.GetAllCategoriesAsync(page,size);
             return Ok(categories);
         }
 
-        [HttpGet("{id}")]
-        [Authorize(Roles = "SuperAdmin,Admin,Cashier")]
+        [HttpGet("[action]/{id}")]
         public async Task<IActionResult> GetCategoryById(int id)
         {
             var category = await _categoryService.GetCategoryByIdAsync(id);
@@ -49,66 +50,47 @@ namespace EStore.Presentation.Controllers
                 return NotFound();
             }
             return Ok(category);
+
         }
 
-        [HttpPut("{id}")]
-        [Authorize(Roles = "SuperAdmin,Admin,Cashier")]
-        public async Task<IActionResult> UpdateCategory(int id, [FromBody] UpdateCategoryRequestDTO updateCategoryRequestDTO)
+        [HttpPut("[action]")]
+        [Authorize(Roles = "SuperAdmin,Admin")]
+        public async Task<IActionResult> UpdateCategory(int id, [FromBody] UpdateCategoryVM updateCategoryVM)
         {
             try
             {
-                if (id != updateCategoryRequestDTO.Id)
+                if (id != updateCategoryVM.Id)
                 {
                     return BadRequest(new { Message = "Mismatch between route id and body id." });
                 }
 
-                var response = await _categoryService.UpdateCategoryAsync(updateCategoryRequestDTO);
-                if (response.StatusCode == HttpStatusCode.NoContent)
+                var response = await _categoryService.UpdateCategoryAsync(updateCategoryVM);
+                if (response == HttpStatusCode.NoContent)
                 {
                     return NoContent();
                 }
-                else if (response.StatusCode == HttpStatusCode.NotFound)
+                else if (response == HttpStatusCode.NotFound)
                 {
-                    return NotFound(response.Message);
+                    return NotFound(response);
                 }
                 else
                 {
-                    return StatusCode((int)response.StatusCode, new { Message = response.Message });
+                    return StatusCode((int)response, new { Message = response });
                 }
             }
             catch (Exception ex)
             {
                 return StatusCode((int)HttpStatusCode.InternalServerError, new { Message = ex.Message });
             }
+
         }
 
-        [HttpDelete("{id}")]
-        [Authorize(Roles = "SuperAdmin,Admin,Cashier")]
+        [HttpDelete("[action]/{id}")]
+        [Authorize(Roles = "SuperAdmin,Admin")]
         public async Task<IActionResult> DeleteCategory(int id)
         {
-            try
-            {
-                var response = await _categoryService.DeleteCategoryAsync(id);
-                if (response.StatusCode == HttpStatusCode.NoContent)
-                {
-                    return NoContent();
-                }
-                else if (response.StatusCode == HttpStatusCode.NotFound)
-                {
-                    return NotFound(response.Message);
-                }
-                else
-                {
-                    return StatusCode((int)response.StatusCode, new { Message = response.Message });
-                }
-            }
-            catch (Exception ex)
-            {
-                return StatusCode((int)HttpStatusCode.InternalServerError, new { Message = ex.Message });
-            }
+            await _categoryService.DeleteCategoryAsync(id);
+            return Ok();
         }
-
-
-
     }
 }

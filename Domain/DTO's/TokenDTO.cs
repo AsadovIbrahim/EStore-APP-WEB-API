@@ -8,8 +8,8 @@ namespace EStore.Domain.DTO_s
 {
     public class TokenDTO
     {
-        public string Token { get; set; }
-        public string Name { get; set; }
+        public string? Token { get; set; }
+        public string? Name { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime ExpireTime { get; set; }
     }

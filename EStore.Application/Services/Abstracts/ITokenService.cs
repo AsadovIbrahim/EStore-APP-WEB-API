@@ -1,4 +1,5 @@
 ﻿using EStore.Domain.DTO_s;
+using EStore.Domain.Entities.Concretes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,9 @@ namespace EStore.Application.Services.Abstracts
 {
     public interface ITokenService
     {
-        string GenerateAccessToken(GenerateTokenRequestDTO generateTokenRequestDTO);
-        TokenDTO GenerateRefreshToken(string tokenName);
+        string CreateAccessToken(AccessTokenDTO user);
+        UserToken CreateRefreshToken();
+        UserToken CreateRepasswordToken();
+        UserToken CreateConfirmEmailToken();
     }
 }

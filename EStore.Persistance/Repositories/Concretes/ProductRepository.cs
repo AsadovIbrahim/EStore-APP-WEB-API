@@ -17,9 +17,9 @@ namespace EStore.Persistance.Repositories.Concretes
         {
         }
 
-        public async Task<Product> GetProductByIdAsync(int id)
+        public async Task<List<Product>> GetByCategoryNameAsync(string categoryName)
         {
-            return await _context.Set<Product>().FirstOrDefaultAsync(i => i.Id == id);
+            return await _context.Set<Product>().Where(p => p.Category.Name == categoryName).ToListAsync();
         }
     }
 }

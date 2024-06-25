@@ -17,9 +17,9 @@ namespace EStore.Persistance.Repositories.Concretes
         {
         }
 
-        public async Task<Role> GetRoleByNameAsync(string roleName)
+        public async Task<Role?> GetRoleByRoleName(string roleName)
         {
-            return await _context.Roles.FirstOrDefaultAsync(r => r.Name == roleName);
+            return await _context.Set<Role>().FirstOrDefaultAsync(p => p.Name == roleName);
         }
     }
 }

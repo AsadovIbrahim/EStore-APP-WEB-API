@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EStore.Persistance.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240623181703_RoleUpdated")]
-    partial class RoleUpdated
+    [Migration("20240625104721_First")]
+    partial class First
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,14 +36,27 @@ namespace EStore.Persistance.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("Name")
+                        .IsUnique();
 
                     b.ToTable("Categories");
                 });
@@ -62,11 +75,14 @@ namespace EStore.Persistance.Migrations
                     b.Property<int>("CashierId")
                         .HasColumnType("int");
 
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<int>("CustomerId")
                         .HasColumnType("int");
 
-                    b.Property<string>("InvoiceBarcode")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<DateTime?>("DeletedDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<int>("InvoiceType")
                         .HasColumnType("int");
@@ -74,8 +90,8 @@ namespace EStore.Persistance.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
-                    b.Property<int?>("SellInvoiceId")
-                        .HasColumnType("int");
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
@@ -90,6 +106,12 @@ namespace EStore.Persistance.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<int>("InvoiceId")
                         .HasColumnType("int");
 
@@ -100,7 +122,10 @@ namespace EStore.Persistance.Migrations
                         .HasColumnType("int");
 
                     b.Property<decimal>("Quantity")
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("decimal(18,6)");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
@@ -122,6 +147,12 @@ namespace EStore.Persistance.Migrations
                     b.Property<int>("CategoryId")
                         .HasColumnType("int");
 
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -134,10 +165,13 @@ namespace EStore.Persistance.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("decimal(16,6)");
 
                     b.Property<int>("Stock")
                         .HasColumnType("int");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
@@ -154,16 +188,58 @@ namespace EStore.Persistance.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
+                    b.HasIndex("Name")
+                        .IsUnique();
+
                     b.ToTable("Roles");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreatedDate = new DateTime(2024, 6, 25, 14, 47, 17, 60, DateTimeKind.Local).AddTicks(6681),
+                            IsDeleted = false,
+                            Name = "SuperAdmin"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreatedDate = new DateTime(2024, 6, 25, 14, 47, 17, 60, DateTimeKind.Local).AddTicks(6696),
+                            IsDeleted = false,
+                            Name = "Admin"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CreatedDate = new DateTime(2024, 6, 25, 14, 47, 17, 60, DateTimeKind.Local).AddTicks(6698),
+                            IsDeleted = false,
+                            Name = "Customer"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CreatedDate = new DateTime(2024, 6, 25, 14, 47, 17, 60, DateTimeKind.Local).AddTicks(6700),
+                            IsDeleted = false,
+                            Name = "Cashier"
+                        });
                 });
 
             modelBuilder.Entity("EStore.Domain.Entities.Concretes.User", b =>
@@ -174,42 +250,65 @@ namespace EStore.Persistance.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Email")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("EmailConfirmed")
-                        .HasColumnType("bit");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
+                    b.Property<bool?>("IsEmailConfirmed")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<byte[]>("PasswordHash")
-                        .IsRequired()
                         .HasColumnType("varbinary(max)");
 
                     b.Property<byte[]>("PasswordSalt")
-                        .IsRequired()
                         .HasColumnType("varbinary(max)");
 
                     b.Property<int>("RoleId")
                         .HasColumnType("int");
 
                     b.Property<string>("Surname")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("UserName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
+                    b.HasIndex("RoleId");
+
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreatedDate = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "superadmin@gmail.com",
+                            IsDeleted = false,
+                            IsEmailConfirmed = true,
+                            Name = "SuperAdmin",
+                            PasswordHash = new byte[] { 217, 145, 13, 182, 15, 53, 86, 44, 178, 78, 156, 18, 245, 207, 221, 161, 202, 226, 40, 246, 58, 64, 43, 75, 191, 51, 59, 66, 248, 66, 123, 46 },
+                            PasswordSalt = new byte[] { 187, 147, 42, 234, 24, 54, 119, 209, 55, 245, 2, 180, 78, 251, 93, 97, 117, 134, 108, 137, 121, 15, 184, 156, 150, 192, 38, 199, 255, 197, 119, 121, 9, 155, 144, 76, 127, 55, 149, 115, 221, 179, 229, 123, 39, 231, 192, 2, 53, 108, 79, 9, 249, 194, 246, 250, 122, 63, 187, 14, 140, 20, 50, 246 },
+                            RoleId = 1,
+                            Surname = "SuperAdminov",
+                            UserName = "superadmin"
+                        });
                 });
 
             modelBuilder.Entity("EStore.Domain.Entities.Concretes.UserToken", b =>
@@ -221,6 +320,12 @@ namespace EStore.Persistance.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime?>("DeletedDate")
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("ExpireTime")
@@ -237,6 +342,9 @@ namespace EStore.Persistance.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<DateTime?>("UpdatedDate")
+                        .HasColumnType("datetime2");
+
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
@@ -245,21 +353,6 @@ namespace EStore.Persistance.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("UserTokens");
-                });
-
-            modelBuilder.Entity("RoleUser", b =>
-                {
-                    b.Property<int>("RolesId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("UsersId")
-                        .HasColumnType("int");
-
-                    b.HasKey("RolesId", "UsersId");
-
-                    b.HasIndex("UsersId");
-
-                    b.ToTable("RoleUser");
                 });
 
             modelBuilder.Entity("EStore.Domain.Entities.Concretes.InvoiceItem", b =>
@@ -292,6 +385,17 @@ namespace EStore.Persistance.Migrations
                     b.Navigation("Category");
                 });
 
+            modelBuilder.Entity("EStore.Domain.Entities.Concretes.User", b =>
+                {
+                    b.HasOne("EStore.Domain.Entities.Concretes.Role", "Role")
+                        .WithMany("Users")
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Role");
+                });
+
             modelBuilder.Entity("EStore.Domain.Entities.Concretes.UserToken", b =>
                 {
                     b.HasOne("EStore.Domain.Entities.Concretes.User", "User")
@@ -301,21 +405,6 @@ namespace EStore.Persistance.Migrations
                         .IsRequired();
 
                     b.Navigation("User");
-                });
-
-            modelBuilder.Entity("RoleUser", b =>
-                {
-                    b.HasOne("EStore.Domain.Entities.Concretes.Role", null)
-                        .WithMany()
-                        .HasForeignKey("RolesId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("EStore.Domain.Entities.Concretes.User", null)
-                        .WithMany()
-                        .HasForeignKey("UsersId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
                 });
 
             modelBuilder.Entity("EStore.Domain.Entities.Concretes.Category", b =>
@@ -331,6 +420,11 @@ namespace EStore.Persistance.Migrations
             modelBuilder.Entity("EStore.Domain.Entities.Concretes.Product", b =>
                 {
                     b.Navigation("InvoiceItems");
+                });
+
+            modelBuilder.Entity("EStore.Domain.Entities.Concretes.Role", b =>
+                {
+                    b.Navigation("Users");
                 });
 
             modelBuilder.Entity("EStore.Domain.Entities.Concretes.User", b =>

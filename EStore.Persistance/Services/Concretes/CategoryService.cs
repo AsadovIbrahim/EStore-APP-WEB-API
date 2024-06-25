@@ -2,6 +2,7 @@
 using EStore.Application.Services.Abstracts;
 using EStore.Domain.DTO_s;
 using EStore.Domain.Entities.Concretes;
+using EStore.Domain.ViewModels.Category;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,81 +20,42 @@ namespace EStore.Persistance.Services.Concretes
         {
             _categoryRepository = categoryRepository;
         }
-        public async Task<AddCategoryResponseDTO> AddCategoryAsync(AddCategoryRequestDTO addCategoryRequestDTO)
+
+        public async Task AddCategoryAsync(AddCategoryVM addCategoryVM)
         {
             var category = new Category
             {
-                Name = addCategoryRequestDTO.Name
+                Name = addCategoryVM.Name
             };
             await _categoryRepository.AddAsync(category);
-
-            return new AddCategoryResponseDTO
-            {
-                Id=category.Id
-            };
+            await _categoryRepository.SaveChangesAsync();
         }
 
-        public async Task<RequestResponseDTO> DeleteCategoryAsync(int id)
+        public async Task<List<Category>> GetAllCategoriesAsync(int page,int size)
         {
-            var category = await _categoryRepository.GetCategoryById(id);
+            return await _categoryRepository.GetAllCategoriesAsync(page,size);
+        }
+
+        public async Task<Category> GetCategoryByIdAsync(int id)
+        {
+            return await _categoryRepository.GetByIdAsync(id);
+        }
+        public async Task DeleteCategoryAsync(int id)
+        {
+            await _categoryRepository.Delete(id);
+            await _categoryRepository.SaveChangesAsync();
+        }
+        public async Task<HttpStatusCode> UpdateCategoryAsync(UpdateCategoryVM updateCategoryVM)
+        {
+            var category = await _categoryRepository.GetByIdAsync(updateCategoryVM.Id);
             if (category == null)
-            {
-                return new RequestResponseDTO
-                {
-                    StatusCode = HttpStatusCode.NotFound,
-                    Message = $"Category with ID {id} not found!"
-                };
-            }
-            await _categoryRepository.Delete(category);
-            return new RequestResponseDTO
-            {
+                return HttpStatusCode.NotFound;
 
-                StatusCode = HttpStatusCode.NoContent
-            };
-        }
-        public async Task<List<GetAllCategoryResponseDTO>> GetAllCategoriesAsync(GetAllCategoryRequestDTO getAllCategoryRequestDTO)
-        {
-            var categories = await _categoryRepository.GetAllAsync();
+            category.Name = updateCategoryVM.Name;
 
-            return categories.Select(c => new GetAllCategoryResponseDTO
-            {
-                Id = c.Id,
-                Name = c.Name,
-            }).ToList();
-        }
-        public async Task<GetAllCategoryResponseDTO> GetCategoryByIdAsync(int id)
-        {
-            var category=await _categoryRepository.GetCategoryById(id);
-            if (category == null)
-            {
-                return null;
-            }
-            return new GetAllCategoryResponseDTO
-            {
-                Id=category.Id,
-                Name=category.Name,
-            };
-                
-        }
-
-        public async Task<RequestResponseDTO> UpdateCategoryAsync(UpdateCategoryRequestDTO updateCategoryRequestDTO)
-        {
-            var category = await _categoryRepository.GetByIdAsync(updateCategoryRequestDTO.Id);
-            if (category == null)
-            {
-                return new RequestResponseDTO
-                {
-                    StatusCode=HttpStatusCode.NotFound,
-                    Message = $"Category with ID {updateCategoryRequestDTO.Id} not found!"
-                };
-            }
-            category.Name = updateCategoryRequestDTO.Name;
             await _categoryRepository.Update(category);
-
-            return new RequestResponseDTO
-            {
-                StatusCode=HttpStatusCode.NoContent
-            };
+            await _categoryRepository.SaveChangesAsync();
+            return HttpStatusCode.OK;
         }
     }
 }

@@ -10,6 +10,7 @@ namespace EStore.Application.Repositories.Concretes
 {
     public interface IProductRepository:IGenericRepository<Product>
     {
-        Task<Product> GetProductByIdAsync(int id);
+        Task<List<Product>> GetByCategoryNameAsync(string categoryName);
+
     }
 }

@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace EStore.Domain.DTO_s
 {
-    public class GetAllCategoryResponseDTO
+    public class AccessTokenDTO
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
+        public string Username { get; set; }
+        public string Email { get; set; }
+        public string RoleName { get; set; }
     }
 }

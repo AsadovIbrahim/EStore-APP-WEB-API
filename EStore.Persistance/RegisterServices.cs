@@ -39,7 +39,6 @@ namespace EStore.Persistance
             //Service Registers
 
             services.AddScoped<ICategoryService, CategoryService>();
-            services.AddScoped<IAuthService, AuthService>();
 
             //Role Register
 

@@ -16,7 +16,7 @@ namespace EStore.Application.Repositories.Abstracts
         Task<T?> GetByIdAsync(int id, bool isDeleted);
         Task<T?> GetByIdAsync(int id);
         Task Update(T entity);
-        Task Delete(T entity);
+        Task Delete(int id);
         Task SaveChangesAsync();
     }
 }

@@ -20,15 +20,25 @@ namespace EStore.Persistance.Repositories.Concretes
 
         public async Task<UserToken> AddAsync(TokenDTO dto, User user)
         {
-            var userToken = new UserToken()
+            var userToken = await GetByToken(dto.Token);
+            if (userToken is not null)
             {
-                UserId=user.Id,
-                Token=dto.Token,
-                Name=dto.Name,
-                ExpireTime=dto.ExpireTime,
+                Delete(userToken.Id);
+            }
+
+            userToken = new UserToken()
+            {
+                Name = dto.Name,
+                Token = dto.Token,
+                CreatedAt = dto.CreatedAt,
+                ExpireTime = dto.ExpireTime,
+                User = user,
+                UserId = user.Id,
+                IsDeleted = false
             };
+
             await _context.Set<UserToken>().AddAsync(userToken);
-            await _context.SaveChangesAsync();
+            await SaveChangesAsync();
             return userToken;
         }
 

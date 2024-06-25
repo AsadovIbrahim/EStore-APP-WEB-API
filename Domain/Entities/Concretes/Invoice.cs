@@ -10,16 +10,12 @@ namespace EStore.Domain.Entities.Concretes
 {
     public class Invoice:Entity
     {
-        public string? InvoiceBarcode { get; set; }
         public int Barcode { get; set; }
         public InvoiceType InvoiceType { get; set; }
 
-        // Foreign Keys
         public int CashierId { get; set; }
         public int CustomerId { get; set; }
-        public int? SellInvoiceId { get; set; }
 
-        // Navigation Properties
-        public virtual ICollection<InvoiceItem> InvoiceItems { get; set; } = new List<InvoiceItem>();
+        public virtual ICollection<InvoiceItem> InvoiceItems { get; set; }
     }
 }

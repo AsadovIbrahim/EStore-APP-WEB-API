@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace EStore.Domain.DTO_s
 {
-    public class EmailConfirmDTO
+    public class AuthResponseDTO
     {
-        public string Email { get; set; }
-        public string Token { get; set; }
+        public bool Success { get; set; }
+        public string Message { get; set; }
     }
 }

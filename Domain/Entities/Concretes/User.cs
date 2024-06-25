@@ -9,16 +9,17 @@ namespace EStore.Domain.Entities.Concretes
 {
     public class User:Entity
     {
-        public string UserName { get; set; }
-        public string Name { get; set; }
-        public string Surname { get; set; }
+        public string ?UserName { get; set; }
+        public string ?Name { get; set; }
+        public string ?Surname { get; set; }
         public string Email { get; set; }
-        public byte[] PasswordHash { get; set; }
-        public byte[] PasswordSalt { get; set; }
+        public bool? IsEmailConfirmed { get; set; }
 
-        public bool EmailConfirmed { get; set; } = false;
+        public byte[] ?PasswordHash { get; set; }
+        public byte[] ?PasswordSalt { get; set; }
+
         public int RoleId { get; set; } 
-        public virtual ICollection<Role> Roles { get; set; }
+        public virtual Role Role { get; set; }
         public virtual ICollection<UserToken> UserTokens { get; set; }
     }
 }

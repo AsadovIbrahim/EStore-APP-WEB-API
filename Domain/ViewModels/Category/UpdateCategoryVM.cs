@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EStore.Domain.DTO_s
+namespace EStore.Domain.ViewModels.Category
 {
-    public class UpdateCategoryRequestDTO
+    public class UpdateCategoryVM
     {
         public int Id { get; set; }
         public string Name { get; set; }

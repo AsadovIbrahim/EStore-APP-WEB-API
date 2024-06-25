@@ -25,9 +25,10 @@ namespace EStore.Persistance.Repositories.Commons
             await _context.SaveChangesAsync();
         }
 
-        public async Task Delete(T entity)
+        public async Task Delete(int id)
         {
-            _context.Set<T>().Remove(entity);
+            var data=await _context.Set<T>().FirstOrDefaultAsync(p=>p.Id==id);
+            _context.Set<T>().Remove(data!);
             await _context.SaveChangesAsync();
         }
 

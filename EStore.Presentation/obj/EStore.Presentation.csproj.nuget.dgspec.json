@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\EStore.Presentation\\EStore.Presentation.csproj": {}
+    "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Presentation\\EStore.Presentation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\Domain\\EStore.Domain.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\Domain\\EStore.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\Domain\\EStore.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\Domain\\EStore.Domain.csproj",
         "projectName": "EStore.Domain",
-        "projectPath": "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\Domain\\EStore.Domain.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\Domain\\EStore.Domain.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -65,14 +65,14 @@
         }
       }
     },
-    "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\EStore.Application\\EStore.Application.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Application\\EStore.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\EStore.Application\\EStore.Application.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Application\\EStore.Application.csproj",
         "projectName": "EStore.Application",
-        "projectPath": "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\EStore.Application\\EStore.Application.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Application\\EStore.Application.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\EStore.Application\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -90,8 +90,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\Domain\\EStore.Domain.csproj": {
-                "projectPath": "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\Domain\\EStore.Domain.csproj"
+              "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\Domain\\EStore.Domain.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\Domain\\EStore.Domain.csproj"
               }
             }
           }
@@ -130,14 +130,14 @@
         }
       }
     },
-    "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\EStore.Infrastructure\\EStore.Infrastructure.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Infrastructure\\EStore.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\EStore.Infrastructure\\EStore.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Infrastructure\\EStore.Infrastructure.csproj",
         "projectName": "EStore.Infrastructure",
-        "projectPath": "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\EStore.Infrastructure\\EStore.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Infrastructure\\EStore.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\EStore.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -155,8 +155,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\EStore.Application\\EStore.Application.csproj": {
-                "projectPath": "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\EStore.Application\\EStore.Application.csproj"
+              "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Application\\EStore.Application.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Application\\EStore.Application.csproj"
               }
             }
           }
@@ -213,14 +213,14 @@
         }
       }
     },
-    "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\EStore.Persistance\\EStore.Persistance.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Persistance\\EStore.Persistance.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\EStore.Persistance\\EStore.Persistance.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Persistance\\EStore.Persistance.csproj",
         "projectName": "EStore.Persistance",
-        "projectPath": "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\EStore.Persistance\\EStore.Persistance.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Persistance\\EStore.Persistance.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\EStore.Persistance\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Persistance\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -238,11 +238,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\EStore.Application\\EStore.Application.csproj": {
-                "projectPath": "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\EStore.Application\\EStore.Application.csproj"
+              "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Application\\EStore.Application.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Application\\EStore.Application.csproj"
               },
-              "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\EStore.Infrastructure\\EStore.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\EStore.Infrastructure\\EStore.Infrastructure.csproj"
+              "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Infrastructure\\EStore.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Infrastructure\\EStore.Infrastructure.csproj"
               }
             }
           }
@@ -313,14 +313,14 @@
         }
       }
     },
-    "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\EStore.Presentation\\EStore.Presentation.csproj": {
+    "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Presentation\\EStore.Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\EStore.Presentation\\EStore.Presentation.csproj",
+        "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Presentation\\EStore.Presentation.csproj",
         "projectName": "EStore.Presentation",
-        "projectPath": "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\EStore.Presentation\\EStore.Presentation.csproj",
+        "projectPath": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Presentation\\EStore.Presentation.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\EStore.Presentation\\obj\\",
+        "outputPath": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Presentation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -338,11 +338,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\EStore.Infrastructure\\EStore.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\EStore.Infrastructure\\EStore.Infrastructure.csproj"
+              "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Infrastructure\\EStore.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Infrastructure\\EStore.Infrastructure.csproj"
               },
-              "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\EStore.Persistance\\EStore.Persistance.csproj": {
-                "projectPath": "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\EStore.Persistance\\EStore.Persistance.csproj"
+              "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Persistance\\EStore.Persistance.csproj": {
+                "projectPath": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Persistance\\EStore.Persistance.csproj"
               }
             }
           }

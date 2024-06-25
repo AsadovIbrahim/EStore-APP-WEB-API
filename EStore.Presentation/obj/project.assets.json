@@ -5132,11 +5132,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\EStore.Presentation\\EStore.Presentation.csproj",
+      "projectUniqueName": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Presentation\\EStore.Presentation.csproj",
       "projectName": "EStore.Presentation",
-      "projectPath": "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\EStore.Presentation\\EStore.Presentation.csproj",
+      "projectPath": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Presentation\\EStore.Presentation.csproj",
       "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\EStore.Presentation\\obj\\",
+      "outputPath": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5154,11 +5154,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\EStore.Infrastructure\\EStore.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\EStore.Infrastructure\\EStore.Infrastructure.csproj"
+            "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Infrastructure\\EStore.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Infrastructure\\EStore.Infrastructure.csproj"
             },
-            "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\EStore.Persistance\\EStore.Persistance.csproj": {
-              "projectPath": "C:\\Users\\ASUS\\source\\repos\\EStoreApp\\EStore.Persistance\\EStore.Persistance.csproj"
+            "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Persistance\\EStore.Persistance.csproj": {
+              "projectPath": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Persistance\\EStore.Persistance.csproj"
             }
           }
         }

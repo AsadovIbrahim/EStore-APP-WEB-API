@@ -10,6 +10,6 @@ namespace EStore.Application.Repositories.Concretes
 {
     public interface IRoleRepository:IGenericRepository<Role>
     {
-        Task<Role> GetRoleByNameAsync(string roleName);
+        Task<Role?> GetRoleByRoleName(string roleName);
     }
 }
