@@ -32,7 +32,7 @@ namespace EStore.Persistance.Repositories.Commons
             await _context.SaveChangesAsync();
         }
 
-        public async Task<IEnumerable<T>> GetAllAsync()
+        public async Task<ICollection<T>> GetAllAsync()
         {
             return await _context.Set<T>().ToListAsync();
         }

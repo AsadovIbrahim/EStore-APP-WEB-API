@@ -11,7 +11,7 @@ namespace EStore.Application.Repositories.Abstracts
     public interface IGenericRepository<T>where T : Entity,new()
     {
         Task AddAsync(T entity);
-        Task<IEnumerable<T>> GetAllAsync();
+        Task<ICollection<T>> GetAllAsync();
         Task<IEnumerable<T>> GetByExpressionAsync(Expression<Func<T, bool>> expression);
         Task<T?> GetByIdAsync(int id, bool isDeleted);
         Task<T?> GetByIdAsync(int id);
