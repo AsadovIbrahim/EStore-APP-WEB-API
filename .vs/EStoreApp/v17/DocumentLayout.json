@@ -1,7 +1,44 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5860F476-7C82-4FC5-871D-2DA5F27C560E}|EStore.Presentation\\EStore.Presentation.csproj|c:\\users\\asus\\desktop\\estore-app-web-api\\estore.presentation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5860F476-7C82-4FC5-871D-2DA5F27C560E}|EStore.Presentation\\EStore.Presentation.csproj|solutionrelative:estore.presentation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5860F476-7C82-4FC5-871D-2DA5F27C560E}|EStore.Presentation\\EStore.Presentation.csproj|c:\\users\\asus\\desktop\\estore-app-web-api\\estore.presentation\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5860F476-7C82-4FC5-871D-2DA5F27C560E}|EStore.Presentation\\EStore.Presentation.csproj|solutionrelative:estore.presentation\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4400BE72-2F64-4EAE-A698-AE16C134D508}|EStore.Persistance\\EStore.Persistance.csproj|c:\\users\\asus\\desktop\\estore-app-web-api\\estore.persistance\\services\\concretes\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4400BE72-2F64-4EAE-A698-AE16C134D508}|EStore.Persistance\\EStore.Persistance.csproj|solutionrelative:estore.persistance\\services\\concretes\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4400BE72-2F64-4EAE-A698-AE16C134D508}|EStore.Persistance\\EStore.Persistance.csproj|c:\\users\\asus\\desktop\\estore-app-web-api\\estore.persistance\\services\\concretes\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4400BE72-2F64-4EAE-A698-AE16C134D508}|EStore.Persistance\\EStore.Persistance.csproj|solutionrelative:estore.persistance\\services\\concretes\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4884984-CFAC-4B21-85A1-37EE7BF79E19}|EStore.Infrastructure\\EStore.Infrastructure.csproj|c:\\users\\asus\\desktop\\estore-app-web-api\\estore.infrastructure\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4884984-CFAC-4B21-85A1-37EE7BF79E19}|EStore.Infrastructure\\EStore.Infrastructure.csproj|solutionrelative:estore.infrastructure\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5860F476-7C82-4FC5-871D-2DA5F27C560E}|EStore.Presentation\\EStore.Presentation.csproj|c:\\users\\asus\\desktop\\estore-app-web-api\\estore.presentation\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5860F476-7C82-4FC5-871D-2DA5F27C560E}|EStore.Presentation\\EStore.Presentation.csproj|solutionrelative:estore.presentation\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4400BE72-2F64-4EAE-A698-AE16C134D508}|EStore.Persistance\\EStore.Persistance.csproj|c:\\users\\asus\\desktop\\estore-app-web-api\\estore.persistance\\repositories\\concretes\\usertokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4400BE72-2F64-4EAE-A698-AE16C134D508}|EStore.Persistance\\EStore.Persistance.csproj|solutionrelative:estore.persistance\\repositories\\concretes\\usertokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8461232-D46B-4A31-B23F-94729E936292}|EStore.Application\\EStore.Application.csproj|c:\\users\\asus\\desktop\\estore-app-web-api\\estore.application\\repositories\\concretes\\iusertokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8461232-D46B-4A31-B23F-94729E936292}|EStore.Application\\EStore.Application.csproj|solutionrelative:estore.application\\repositories\\concretes\\iusertokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B8461232-D46B-4A31-B23F-94729E936292}|EStore.Application\\EStore.Application.csproj|c:\\users\\asus\\desktop\\estore-app-web-api\\estore.application\\repositories\\concretes\\irolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8461232-D46B-4A31-B23F-94729E936292}|EStore.Application\\EStore.Application.csproj|solutionrelative:estore.application\\repositories\\concretes\\irolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,6 +63,123 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Presentation\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "EStore.Presentation\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Presentation\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "EStore.Presentation\\Controllers\\AuthController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T10:44:15.362Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Persistance\\Services\\Concretes\\ProductService.cs",
+              "RelativeDocumentMoniker": "EStore.Persistance\\Services\\Concretes\\ProductService.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Persistance\\Services\\Concretes\\ProductService.cs",
+              "RelativeToolTip": "EStore.Persistance\\Services\\Concretes\\ProductService.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAkwEMAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T10:24:12.95Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Persistance\\Services\\Concretes\\CategoryService.cs",
+              "RelativeDocumentMoniker": "EStore.Persistance\\Services\\Concretes\\CategoryService.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Persistance\\Services\\Concretes\\CategoryService.cs",
+              "RelativeToolTip": "EStore.Persistance\\Services\\Concretes\\CategoryService.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAYwDQAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T10:21:51.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Presentation\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "EStore.Presentation\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Presentation\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "EStore.Presentation\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAxwCEAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T10:21:44.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Infrastructure\\Services\\TokenService.cs",
+              "RelativeDocumentMoniker": "EStore.Infrastructure\\Services\\TokenService.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Infrastructure\\Services\\TokenService.cs",
+              "RelativeToolTip": "EStore.Infrastructure\\Services\\TokenService.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAkwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T10:22:25.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Presentation\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "EStore.Presentation\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Presentation\\ServiceRegistration.cs",
+              "RelativeToolTip": "EStore.Presentation\\ServiceRegistration.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T10:22:02.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserTokenRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Persistance\\Repositories\\Concretes\\UserTokenRepository.cs",
+              "RelativeDocumentMoniker": "EStore.Persistance\\Repositories\\Concretes\\UserTokenRepository.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Persistance\\Repositories\\Concretes\\UserTokenRepository.cs",
+              "RelativeToolTip": "EStore.Persistance\\Repositories\\Concretes\\UserTokenRepository.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T10:21:25.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IRoleRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Application\\Repositories\\Concretes\\IRoleRepository.cs",
+              "RelativeDocumentMoniker": "EStore.Application\\Repositories\\Concretes\\IRoleRepository.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Application\\Repositories\\Concretes\\IRoleRepository.cs",
+              "RelativeToolTip": "EStore.Application\\Repositories\\Concretes\\IRoleRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T10:15:41.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "IUserTokenRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Application\\Repositories\\Concretes\\IUserTokenRepository.cs",
+              "RelativeDocumentMoniker": "EStore.Application\\Repositories\\Concretes\\IUserTokenRepository.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Application\\Repositories\\Concretes\\IUserTokenRepository.cs",
+              "RelativeToolTip": "EStore.Application\\Repositories\\Concretes\\IUserTokenRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T10:15:33.577Z",
+              "EditorCaption": ""
             }
           ]
         }

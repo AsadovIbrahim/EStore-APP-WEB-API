@@ -33,12 +33,24 @@ namespace EStore.Persistance.Services.Concretes
 
         public async Task<List<Category>> GetAllCategoriesAsync(int page,int size)
         {
-            return await _categoryRepository.GetAllCategoriesAsync(page,size);
+            var category = await _categoryRepository.GetAllCategoriesAsync(page,size);
+            var result = category.Select(p => new Category
+            {
+                Id = p.Id,
+                Name = p.Name,
+            }).ToList();
+            return result;
         }
 
         public async Task<Category> GetCategoryByIdAsync(int id)
         {
-            return await _categoryRepository.GetByIdAsync(id);
+            var category = await _categoryRepository.GetCategoryById(id);
+            var result = new Category
+            {
+                Id=category.Id,
+                Name = category.Name
+            };
+            return result;
         }
         public async Task DeleteCategoryAsync(int id)
         {
