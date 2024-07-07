@@ -23,6 +23,11 @@ namespace EStore.Persistance.Repositories.Concretes
             await _context.SaveChangesAsync();
         }
 
+        public async Task<IEnumerable<Invoice>> GetAllInvoicesAsync()
+        {
+            return await _context.Set<Invoice>().Where(p=>!p.IsDeleted).ToListAsync();
+        }
+
         public async Task<Invoice> GetInvoiceByIdAsync(int id)
         {
             return await _context.Set<Invoice>().FirstOrDefaultAsync(i => i.Id == id); 

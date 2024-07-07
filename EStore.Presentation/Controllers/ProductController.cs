@@ -20,7 +20,7 @@ namespace EStore.Presentation.Controllers
         }
 
         [HttpPost("AddProduct")]
-        [Authorize(Roles ="SuperAdmin,Admin")]
+        [Authorize(Roles ="SuperAdmin,Admin,Cashier")]
         public async Task<IActionResult> AddProduct([FromBody]AddProductVM addProductVM)
         {
             if (!ModelState.IsValid)
@@ -40,6 +40,7 @@ namespace EStore.Presentation.Controllers
         }
 
         [HttpGet("GetByIdProduct")]
+        [Authorize(Roles = "SuperAdmin,Admin,Cashier")]
         public async Task<IActionResult> GetByIdAsync(int id)
         {
             var result=await _productService.GetProductByIdAsync(id);
@@ -50,6 +51,7 @@ namespace EStore.Presentation.Controllers
             return Ok(result);
         }
         [HttpDelete("DeleteProduct")]
+        [Authorize(Roles = "SuperAdmin,Admin,Cashier")]
         public async Task<IActionResult> DeleteProductAsync(int id)
         {
             if (!ModelState.IsValid)
@@ -60,6 +62,7 @@ namespace EStore.Presentation.Controllers
             return Ok();
         }
         [HttpPut("UpdateProduct")]
+        [Authorize(Roles = "SuperAdmin,Admin,Cashier")]
         public async Task<IActionResult>UpdateProductAsync(UpdateProductVM updateProductVM)
         {
             if (!ModelState.IsValid)

@@ -3,40 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5860F476-7C82-4FC5-871D-2DA5F27C560E}|EStore.Presentation\\EStore.Presentation.csproj|c:\\users\\asus\\desktop\\estore-app-web-api\\estore.presentation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5860F476-7C82-4FC5-871D-2DA5F27C560E}|EStore.Presentation\\EStore.Presentation.csproj|solutionrelative:estore.presentation\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{03B77898-833E-4128-92E1-AE648407AEAA}|Domain\\EStore.Domain.csproj|c:\\users\\asus\\desktop\\estore-app-web-api\\domain\\viewmodels\\invoice\\addinvoicevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03B77898-833E-4128-92E1-AE648407AEAA}|Domain\\EStore.Domain.csproj|solutionrelative:domain\\viewmodels\\invoice\\addinvoicevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5860F476-7C82-4FC5-871D-2DA5F27C560E}|EStore.Presentation\\EStore.Presentation.csproj|c:\\users\\asus\\desktop\\estore-app-web-api\\estore.presentation\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5860F476-7C82-4FC5-871D-2DA5F27C560E}|EStore.Presentation\\EStore.Presentation.csproj|solutionrelative:estore.presentation\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{03B77898-833E-4128-92E1-AE648407AEAA}|Domain\\EStore.Domain.csproj|c:\\users\\asus\\desktop\\estore-app-web-api\\domain\\viewmodels\\invoice\\invoicevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03B77898-833E-4128-92E1-AE648407AEAA}|Domain\\EStore.Domain.csproj|solutionrelative:domain\\viewmodels\\invoice\\invoicevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4400BE72-2F64-4EAE-A698-AE16C134D508}|EStore.Persistance\\EStore.Persistance.csproj|c:\\users\\asus\\desktop\\estore-app-web-api\\estore.persistance\\services\\concretes\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4400BE72-2F64-4EAE-A698-AE16C134D508}|EStore.Persistance\\EStore.Persistance.csproj|solutionrelative:estore.persistance\\services\\concretes\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Persistance\\Migrations\\20240707121433_invoiceupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EStore.Persistance\\Migrations\\20240707121433_invoiceupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4400BE72-2F64-4EAE-A698-AE16C134D508}|EStore.Persistance\\EStore.Persistance.csproj|c:\\users\\asus\\desktop\\estore-app-web-api\\estore.persistance\\services\\concretes\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4400BE72-2F64-4EAE-A698-AE16C134D508}|EStore.Persistance\\EStore.Persistance.csproj|solutionrelative:estore.persistance\\services\\concretes\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5860F476-7C82-4FC5-871D-2DA5F27C560E}|EStore.Presentation\\EStore.Presentation.csproj|c:\\users\\asus\\desktop\\estore-app-web-api\\estore.presentation\\controllers\\invoicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5860F476-7C82-4FC5-871D-2DA5F27C560E}|EStore.Presentation\\EStore.Presentation.csproj|solutionrelative:estore.presentation\\controllers\\invoicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4884984-CFAC-4B21-85A1-37EE7BF79E19}|EStore.Infrastructure\\EStore.Infrastructure.csproj|c:\\users\\asus\\desktop\\estore-app-web-api\\estore.infrastructure\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4884984-CFAC-4B21-85A1-37EE7BF79E19}|EStore.Infrastructure\\EStore.Infrastructure.csproj|solutionrelative:estore.infrastructure\\services\\tokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4400BE72-2F64-4EAE-A698-AE16C134D508}|EStore.Persistance\\EStore.Persistance.csproj|c:\\users\\asus\\desktop\\estore-app-web-api\\estore.persistance\\services\\concretes\\invoiceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4400BE72-2F64-4EAE-A698-AE16C134D508}|EStore.Persistance\\EStore.Persistance.csproj|solutionrelative:estore.persistance\\services\\concretes\\invoiceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5860F476-7C82-4FC5-871D-2DA5F27C560E}|EStore.Presentation\\EStore.Presentation.csproj|c:\\users\\asus\\desktop\\estore-app-web-api\\estore.presentation\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5860F476-7C82-4FC5-871D-2DA5F27C560E}|EStore.Presentation\\EStore.Presentation.csproj|solutionrelative:estore.presentation\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B8461232-D46B-4A31-B23F-94729E936292}|EStore.Application\\EStore.Application.csproj|c:\\users\\asus\\desktop\\estore-app-web-api\\estore.application\\services\\abstracts\\iinvoiceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B8461232-D46B-4A31-B23F-94729E936292}|EStore.Application\\EStore.Application.csproj|solutionrelative:estore.application\\services\\abstracts\\iinvoiceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4400BE72-2F64-4EAE-A698-AE16C134D508}|EStore.Persistance\\EStore.Persistance.csproj|c:\\users\\asus\\desktop\\estore-app-web-api\\estore.persistance\\repositories\\concretes\\usertokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4400BE72-2F64-4EAE-A698-AE16C134D508}|EStore.Persistance\\EStore.Persistance.csproj|solutionrelative:estore.persistance\\repositories\\concretes\\usertokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{03B77898-833E-4128-92E1-AE648407AEAA}|Domain\\EStore.Domain.csproj|c:\\users\\asus\\desktop\\estore-app-web-api\\domain\\entities\\concretes\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03B77898-833E-4128-92E1-AE648407AEAA}|Domain\\EStore.Domain.csproj|solutionrelative:domain\\entities\\concretes\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B8461232-D46B-4A31-B23F-94729E936292}|EStore.Application\\EStore.Application.csproj|c:\\users\\asus\\desktop\\estore-app-web-api\\estore.application\\repositories\\concretes\\iusertokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8461232-D46B-4A31-B23F-94729E936292}|EStore.Application\\EStore.Application.csproj|solutionrelative:estore.application\\repositories\\concretes\\iusertokenrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B8461232-D46B-4A31-B23F-94729E936292}|EStore.Application\\EStore.Application.csproj|c:\\users\\asus\\desktop\\estore-app-web-api\\estore.application\\repositories\\concretes\\irolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B8461232-D46B-4A31-B23F-94729E936292}|EStore.Application\\EStore.Application.csproj|solutionrelative:estore.application\\repositories\\concretes\\irolerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{03B77898-833E-4128-92E1-AE648407AEAA}|Domain\\EStore.Domain.csproj|c:\\users\\asus\\desktop\\estore-app-web-api\\domain\\entities\\concretes\\invoiceitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{03B77898-833E-4128-92E1-AE648407AEAA}|Domain\\EStore.Domain.csproj|solutionrelative:domain\\entities\\concretes\\invoiceitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,119 +62,106 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Presentation\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "EStore.Presentation\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Presentation\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "EStore.Presentation\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAwAAAA",
+              "DocumentIndex": 2,
+              "Title": "20240707121433_invoiceupdate.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Persistance\\Migrations\\20240707121433_invoiceupdate.cs",
+              "RelativeDocumentMoniker": "EStore.Persistance\\Migrations\\20240707121433_invoiceupdate.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Persistance\\Migrations\\20240707121433_invoiceupdate.cs",
+              "RelativeToolTip": "EStore.Persistance\\Migrations\\20240707121433_invoiceupdate.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T10:44:15.362Z",
+              "WhenOpened": "2024-07-07T12:14:33.54Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Persistance\\Services\\Concretes\\ProductService.cs",
-              "RelativeDocumentMoniker": "EStore.Persistance\\Services\\Concretes\\ProductService.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Persistance\\Services\\Concretes\\ProductService.cs",
-              "RelativeToolTip": "EStore.Persistance\\Services\\Concretes\\ProductService.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAkwEMAAAAgAAAA",
+              "Title": "InvoiceController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Presentation\\Controllers\\InvoiceController.cs",
+              "RelativeDocumentMoniker": "EStore.Presentation\\Controllers\\InvoiceController.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Presentation\\Controllers\\InvoiceController.cs",
+              "RelativeToolTip": "EStore.Presentation\\Controllers\\InvoiceController.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAA7wEcAAAAYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T10:24:12.95Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CategoryService.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Persistance\\Services\\Concretes\\CategoryService.cs",
-              "RelativeDocumentMoniker": "EStore.Persistance\\Services\\Concretes\\CategoryService.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Persistance\\Services\\Concretes\\CategoryService.cs",
-              "RelativeToolTip": "EStore.Persistance\\Services\\Concretes\\CategoryService.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAYwDQAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T10:21:51.337Z",
+              "WhenOpened": "2024-07-07T12:12:53.695Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Presentation\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "EStore.Presentation\\Controllers\\CategoryController.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Presentation\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "EStore.Presentation\\Controllers\\CategoryController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAxwCEAAAAYAAAA",
+              "Title": "InvoiceVM.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\Domain\\ViewModels\\Invoice\\InvoiceVM.cs",
+              "RelativeDocumentMoniker": "Domain\\ViewModels\\Invoice\\InvoiceVM.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\Domain\\ViewModels\\Invoice\\InvoiceVM.cs",
+              "RelativeToolTip": "Domain\\ViewModels\\Invoice\\InvoiceVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T10:21:44.231Z",
+              "WhenOpened": "2024-07-07T11:57:46.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AddInvoiceVM.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\Domain\\ViewModels\\Invoice\\AddInvoiceVM.cs",
+              "RelativeDocumentMoniker": "Domain\\ViewModels\\Invoice\\AddInvoiceVM.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\Domain\\ViewModels\\Invoice\\AddInvoiceVM.cs",
+              "RelativeToolTip": "Domain\\ViewModels\\Invoice\\AddInvoiceVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T11:57:41.456Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "TokenService.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Infrastructure\\Services\\TokenService.cs",
-              "RelativeDocumentMoniker": "EStore.Infrastructure\\Services\\TokenService.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Infrastructure\\Services\\TokenService.cs",
-              "RelativeToolTip": "EStore.Infrastructure\\Services\\TokenService.cs",
-              "ViewState": "AQIAAEAAAAAAAAAAAAAkwAAAAAAAAAAA",
+              "Title": "InvoiceService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Persistance\\Services\\Concretes\\InvoiceService.cs",
+              "RelativeDocumentMoniker": "EStore.Persistance\\Services\\Concretes\\InvoiceService.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Persistance\\Services\\Concretes\\InvoiceService.cs",
+              "RelativeToolTip": "EStore.Persistance\\Services\\Concretes\\InvoiceService.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAwFsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T10:22:25.023Z",
+              "WhenOpened": "2024-07-07T11:56:34.345Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ServiceRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Presentation\\ServiceRegistration.cs",
-              "RelativeDocumentMoniker": "EStore.Presentation\\ServiceRegistration.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Presentation\\ServiceRegistration.cs",
-              "RelativeToolTip": "EStore.Presentation\\ServiceRegistration.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Title": "IInvoiceService.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Application\\Services\\Abstracts\\IInvoiceService.cs",
+              "RelativeDocumentMoniker": "EStore.Application\\Services\\Abstracts\\IInvoiceService.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Application\\Services\\Abstracts\\IInvoiceService.cs",
+              "RelativeToolTip": "EStore.Application\\Services\\Abstracts\\IInvoiceService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBAAAAA1AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T10:22:02.083Z",
+              "WhenOpened": "2024-07-07T11:56:19.151Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "UserTokenRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Persistance\\Repositories\\Concretes\\UserTokenRepository.cs",
-              "RelativeDocumentMoniker": "EStore.Persistance\\Repositories\\Concretes\\UserTokenRepository.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Persistance\\Repositories\\Concretes\\UserTokenRepository.cs",
-              "RelativeToolTip": "EStore.Persistance\\Repositories\\Concretes\\UserTokenRepository.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Title": "Invoice.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\Domain\\Entities\\Concretes\\Invoice.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Concretes\\Invoice.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\Domain\\Entities\\Concretes\\Invoice.cs",
+              "RelativeToolTip": "Domain\\Entities\\Concretes\\Invoice.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T10:21:25.155Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IRoleRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Application\\Repositories\\Concretes\\IRoleRepository.cs",
-              "RelativeDocumentMoniker": "EStore.Application\\Repositories\\Concretes\\IRoleRepository.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Application\\Repositories\\Concretes\\IRoleRepository.cs",
-              "RelativeToolTip": "EStore.Application\\Repositories\\Concretes\\IRoleRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T10:15:41.817Z",
+              "WhenOpened": "2024-07-07T11:55:03.243Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "IUserTokenRepository.cs",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Application\\Repositories\\Concretes\\IUserTokenRepository.cs",
-              "RelativeDocumentMoniker": "EStore.Application\\Repositories\\Concretes\\IUserTokenRepository.cs",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\EStore.Application\\Repositories\\Concretes\\IUserTokenRepository.cs",
-              "RelativeToolTip": "EStore.Application\\Repositories\\Concretes\\IUserTokenRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAWAAAA",
+              "Title": "InvoiceItem.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\Domain\\Entities\\Concretes\\InvoiceItem.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Concretes\\InvoiceItem.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\EStore-APP-WEB-API\\Domain\\Entities\\Concretes\\InvoiceItem.cs",
+              "RelativeToolTip": "Domain\\Entities\\Concretes\\InvoiceItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T10:15:33.577Z",
+              "WhenOpened": "2024-07-07T11:54:59.216Z",
               "EditorCaption": ""
             }
           ]

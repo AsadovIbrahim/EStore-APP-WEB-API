@@ -66,8 +66,8 @@ namespace EStore.Persistance.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("Barcode")
-                        .HasColumnType("int");
+                    b.Property<long>("Barcode")
+                        .HasColumnType("bigint");
 
                     b.Property<int>("CashierId")
                         .HasColumnType("int");
@@ -212,28 +212,28 @@ namespace EStore.Persistance.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 6, 25, 14, 47, 17, 60, DateTimeKind.Local).AddTicks(6681),
+                            CreatedDate = new DateTime(2024, 7, 7, 16, 14, 32, 691, DateTimeKind.Local).AddTicks(8414),
                             IsDeleted = false,
                             Name = "SuperAdmin"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 6, 25, 14, 47, 17, 60, DateTimeKind.Local).AddTicks(6696),
+                            CreatedDate = new DateTime(2024, 7, 7, 16, 14, 32, 691, DateTimeKind.Local).AddTicks(8432),
                             IsDeleted = false,
                             Name = "Admin"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2024, 6, 25, 14, 47, 17, 60, DateTimeKind.Local).AddTicks(6698),
+                            CreatedDate = new DateTime(2024, 7, 7, 16, 14, 32, 691, DateTimeKind.Local).AddTicks(8436),
                             IsDeleted = false,
                             Name = "Customer"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedDate = new DateTime(2024, 6, 25, 14, 47, 17, 60, DateTimeKind.Local).AddTicks(6700),
+                            CreatedDate = new DateTime(2024, 7, 7, 16, 14, 32, 691, DateTimeKind.Local).AddTicks(8439),
                             IsDeleted = false,
                             Name = "Cashier"
                         });
@@ -300,8 +300,8 @@ namespace EStore.Persistance.Migrations
                             IsDeleted = false,
                             IsEmailConfirmed = true,
                             Name = "SuperAdmin",
-                            PasswordHash = new byte[] { 217, 145, 13, 182, 15, 53, 86, 44, 178, 78, 156, 18, 245, 207, 221, 161, 202, 226, 40, 246, 58, 64, 43, 75, 191, 51, 59, 66, 248, 66, 123, 46 },
-                            PasswordSalt = new byte[] { 187, 147, 42, 234, 24, 54, 119, 209, 55, 245, 2, 180, 78, 251, 93, 97, 117, 134, 108, 137, 121, 15, 184, 156, 150, 192, 38, 199, 255, 197, 119, 121, 9, 155, 144, 76, 127, 55, 149, 115, 221, 179, 229, 123, 39, 231, 192, 2, 53, 108, 79, 9, 249, 194, 246, 250, 122, 63, 187, 14, 140, 20, 50, 246 },
+                            PasswordHash = new byte[] { 209, 207, 153, 83, 90, 176, 61, 155, 59, 218, 184, 123, 41, 122, 14, 14, 193, 113, 106, 110, 112, 166, 77, 249, 65, 170, 39, 149, 183, 147, 128, 228 },
+                            PasswordSalt = new byte[] { 230, 17, 137, 233, 0, 17, 159, 246, 115, 29, 159, 65, 213, 25, 115, 73, 124, 37, 183, 30, 19, 109, 154, 201, 173, 84, 243, 79, 110, 184, 223, 145, 108, 22, 13, 132, 166, 199, 156, 42, 119, 132, 169, 204, 209, 178, 34, 227, 146, 85, 178, 185, 224, 27, 241, 252, 250, 24, 218, 16, 106, 16, 244, 35 },
                             RoleId = 1,
                             Surname = "SuperAdminov",
                             UserName = "superadmin"

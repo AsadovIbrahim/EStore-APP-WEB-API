@@ -1,10 +1,10 @@
-﻿using EStore.Application.Repositories.Abstracts;
-using EStore.Domain.Entities.Concretes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System;
 using System.Text;
+using System.Linq;
 using System.Threading.Tasks;
+using System.Collections.Generic;
+using EStore.Domain.Entities.Concretes;
+using EStore.Application.Repositories.Abstracts;
 
 namespace EStore.Application.Repositories.Concretes
 {
@@ -12,5 +12,6 @@ namespace EStore.Application.Repositories.Concretes
     {
         Task AddInvoiceAsync(Invoice invoice);
         Task<Invoice> GetInvoiceByIdAsync(int id);
+        Task<IEnumerable<Invoice>> GetAllInvoicesAsync();
     }
 }

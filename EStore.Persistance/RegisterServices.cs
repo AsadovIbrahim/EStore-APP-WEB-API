@@ -40,6 +40,7 @@ namespace EStore.Persistance
 
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<IInvoiceService, InvoiceService>();
 
             //Role Register
 
